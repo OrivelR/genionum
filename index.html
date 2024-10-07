@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text">Pense em um número</h1>
+    <input type="number" id="numero" placeholder="Insira o número">
+    <button id="botao">Leia minha mente</button>
+    <h2></h2>
+
+    <script>
+        const inputNumber = document.querySelector('input[type="number"]');
+        const button = document.querySelector ('button');
+
+        button.addEventListener('click', () => {
+
+        const numero = inputNumber.value;
+            if(numero !== null && numero !== ""){
+                alert("O número que você pensou é: " + numero)
+            }
+            else{
+                alert("Nada não é um número!")
+            }
+        });
+    </script>
+</body>
+</html>
